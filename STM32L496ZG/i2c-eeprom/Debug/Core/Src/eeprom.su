@@ -1,0 +1,4 @@
+eeprom.c:15:10:bytes_to_write	16	static
+eeprom.c:21:6:EEPROM_Write	64	static
+eeprom.c:53:6:EEPROM_Read	64	static
+eeprom.c:84:6:EEPROM_PageErase	104	static
