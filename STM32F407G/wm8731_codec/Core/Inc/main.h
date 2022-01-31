@@ -71,7 +71,7 @@ void Error_Handler(void);
 #define OTG_FS_PowerSwitchOn_Pin GPIO_PIN_0
 #define OTG_FS_PowerSwitchOn_GPIO_Port GPIOC
 #define PDM_OUT_Pin GPIO_PIN_3
-#define PDM_OUT_GPIO_Port GPIOC
+#define PDM_OUT_GPIO_Port GPIOCWM8731_volumeInteger
 #define B1_Pin GPIO_PIN_0
 #define B1_GPIO_Port GPIOA
 #define I2S3_WS_Pin GPIO_PIN_4
@@ -115,7 +115,7 @@ void Error_Handler(void);
 #define Audio_RST_Pin GPIO_PIN_4
 #define Audio_RST_GPIO_Port GPIOD
 #define OTG_FS_OverCurrent_Pin GPIO_PIN_5
-#define OTG_FS_OverCurrent_GPIO_Port GPIOD
+#define OTG_FS_OverCurrent_GPIO_Port GPIODWM8731_volumeInteger
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
 #define Audio_SCL_Pin GPIO_PIN_6
