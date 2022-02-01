@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := i2s-pmod
+BUILD_ARTIFACT_NAME := wm8731_test
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME).$(BUILD_ARTIFACT_EXTENSION)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-i2s-pmod.elf \
+wm8731_test.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-i2s-pmod.list \
+wm8731_test.list \
 
 OBJCOPY_BIN += \
-i2s-pmod.bin \
+wm8731_test.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: i2s-pmod.elf secondary-outputs
+main-build: wm8731_test.elf secondary-outputs
 
 # Tool invocations
-i2s-pmod.elf: $(OBJS) $(USER_OBJS) /home/will/Files/Projects/STM32/STM32_DSP_IIR/code/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "i2s-pmod.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/will/Files/Projects/STM32/STM32_DSP_IIR/code/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="i2s-pmod.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+wm8731_test.elf: $(OBJS) $(USER_OBJS) /home/will/Files/Projects/STM32/stm32-examples/STM32F407G/wm8731_test/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "wm8731_test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/will/Files/Projects/STM32/stm32-examples/STM32F407G/wm8731_test/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="wm8731_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,13 +71,13 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-i2s-pmod.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "i2s-pmod.list"
+wm8731_test.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "wm8731_test.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-i2s-pmod.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "i2s-pmod.bin"
+wm8731_test.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "wm8731_test.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
