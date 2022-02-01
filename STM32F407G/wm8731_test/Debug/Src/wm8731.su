@@ -1,0 +1,6 @@
+wm8731.c:3:6:WM8731_init	88	static
+wm8731.c:31:6:WM8731_write	40	dynamic
+wm8731.c:45:6:WM8731_volumeInteger	88	static
+wm8731.c:58:6:WM8731_inputLevel	104	static
+wm8731.c:70:6:WM8731_inputSelect	88	static
+wm8731.c:87:6:WM8731_volume	88	static
