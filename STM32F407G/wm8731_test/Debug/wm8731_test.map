@@ -2413,7 +2413,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7e Src/stm32f4xx_hal_msp.o
  .debug_macro   0x0000000000000000       0x89 Src/stm32f4xx_hal_msp.o
  .debug_macro   0x0000000000000000      0x12d Src/stm32f4xx_hal_msp.o
- .debug_macro   0x0000000000000000       0x10 Src/stm32f4xx_hal_msp.o
+ .debug_macro   0x0000000000000000       0x34 Src/stm32f4xx_hal_msp.o
  .group         0x0000000000000000        0xc Src/stm32f4xx_it.o
  .group         0x0000000000000000        0xc Src/stm32f4xx_it.o
  .group         0x0000000000000000        0xc Src/stm32f4xx_it.o
@@ -2500,7 +2500,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7e Src/stm32f4xx_it.o
  .debug_macro   0x0000000000000000       0x89 Src/stm32f4xx_it.o
  .debug_macro   0x0000000000000000      0x12d Src/stm32f4xx_it.o
- .debug_macro   0x0000000000000000       0x10 Src/stm32f4xx_it.o
+ .debug_macro   0x0000000000000000       0x34 Src/stm32f4xx_it.o
  .group         0x0000000000000000        0xc Src/syscalls.o
  .group         0x0000000000000000        0xc Src/syscalls.o
  .group         0x0000000000000000        0xc Src/syscalls.o
@@ -2927,7 +2927,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7e Src/wm8731.o
  .debug_macro   0x0000000000000000       0x89 Src/wm8731.o
  .debug_macro   0x0000000000000000      0x12d Src/wm8731.o
- .debug_macro   0x0000000000000000       0x10 Src/wm8731.o
+ .debug_macro   0x0000000000000000       0x34 Src/wm8731.o
  .debug_macro   0x0000000000000000       0x64 Src/wm8731.o
  .text          0x0000000000000000       0x14 Startup/startup_stm32f407vgtx.o
  .data          0x0000000000000000        0x0 Startup/startup_stm32f407vgtx.o
@@ -3706,7 +3706,7 @@ LOAD /opt/st/stm32cubeide_1.6.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
  .debug_ranges  0x0000000000000880       0x38 Src/wm8731.o
  .debug_ranges  0x00000000000008b8       0x20 Startup/startup_stm32f407vgtx.o
 
-.debug_macro    0x0000000000000000    0x20a03
+.debug_macro    0x0000000000000000    0x20a27
  .debug_macro   0x0000000000000000      0x243 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_macro   0x0000000000000243      0xaa8 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_macro   0x0000000000000ceb      0x29b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
@@ -3758,31 +3758,31 @@ LOAD /opt/st/stm32cubeide_1.6.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
  .debug_macro   0x000000000001f1bb      0x207 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_macro   0x000000000001f3c2      0x1e3 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_macro   0x000000000001f5a5      0x2d2 Src/main.o
- .debug_macro   0x000000000001f877       0x10 Src/main.o
- .debug_macro   0x000000000001f887       0x22 Src/main.o
- .debug_macro   0x000000000001f8a9       0x52 Src/main.o
- .debug_macro   0x000000000001f8fb       0x18 Src/main.o
- .debug_macro   0x000000000001f913       0x3c Src/main.o
- .debug_macro   0x000000000001f94f       0x34 Src/main.o
- .debug_macro   0x000000000001f983       0x16 Src/main.o
- .debug_macro   0x000000000001f999       0x43 Src/main.o
- .debug_macro   0x000000000001f9dc       0x34 Src/main.o
- .debug_macro   0x000000000001fa10       0x10 Src/main.o
- .debug_macro   0x000000000001fa20       0x58 Src/main.o
- .debug_macro   0x000000000001fa78       0x71 Src/main.o
- .debug_macro   0x000000000001fae9       0x1c Src/main.o
- .debug_macro   0x000000000001fb05      0x12a Src/main.o
- .debug_macro   0x000000000001fc2f      0x333 Src/main.o
- .debug_macro   0x000000000001ff62       0x10 Src/main.o
- .debug_macro   0x000000000001ff72       0x35 Src/main.o
- .debug_macro   0x000000000001ffa7       0x20 Src/main.o
- .debug_macro   0x000000000001ffc7       0x64 Src/main.o
- .debug_macro   0x000000000002002b      0x1f2 Src/stm32f4xx_hal_msp.o
- .debug_macro   0x000000000002021d      0x1fc Src/stm32f4xx_it.o
- .debug_macro   0x0000000000020419      0x1e9 Src/system_stm32f4xx.o
- .debug_macro   0x0000000000020602      0x2d2 Src/wm8731.o
- .debug_macro   0x00000000000208d4       0xd9 Src/wm8731.o
- .debug_macro   0x00000000000209ad       0x56 Src/wm8731.o
+ .debug_macro   0x000000000001f877       0x34 Src/main.o
+ .debug_macro   0x000000000001f8ab       0x22 Src/main.o
+ .debug_macro   0x000000000001f8cd       0x52 Src/main.o
+ .debug_macro   0x000000000001f91f       0x18 Src/main.o
+ .debug_macro   0x000000000001f937       0x3c Src/main.o
+ .debug_macro   0x000000000001f973       0x34 Src/main.o
+ .debug_macro   0x000000000001f9a7       0x16 Src/main.o
+ .debug_macro   0x000000000001f9bd       0x43 Src/main.o
+ .debug_macro   0x000000000001fa00       0x34 Src/main.o
+ .debug_macro   0x000000000001fa34       0x10 Src/main.o
+ .debug_macro   0x000000000001fa44       0x58 Src/main.o
+ .debug_macro   0x000000000001fa9c       0x71 Src/main.o
+ .debug_macro   0x000000000001fb0d       0x1c Src/main.o
+ .debug_macro   0x000000000001fb29      0x12a Src/main.o
+ .debug_macro   0x000000000001fc53      0x333 Src/main.o
+ .debug_macro   0x000000000001ff86       0x10 Src/main.o
+ .debug_macro   0x000000000001ff96       0x35 Src/main.o
+ .debug_macro   0x000000000001ffcb       0x20 Src/main.o
+ .debug_macro   0x000000000001ffeb       0x64 Src/main.o
+ .debug_macro   0x000000000002004f      0x1f2 Src/stm32f4xx_hal_msp.o
+ .debug_macro   0x0000000000020241      0x1fc Src/stm32f4xx_it.o
+ .debug_macro   0x000000000002043d      0x1e9 Src/system_stm32f4xx.o
+ .debug_macro   0x0000000000020626      0x2d2 Src/wm8731.o
+ .debug_macro   0x00000000000208f8       0xd9 Src/wm8731.o
+ .debug_macro   0x00000000000209d1       0x56 Src/wm8731.o
 
 .debug_line     0x0000000000000000     0xd207
  .debug_line    0x0000000000000000      0x99e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
@@ -3801,7 +3801,7 @@ LOAD /opt/st/stm32cubeide_1.6.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
  .debug_line    0x000000000000c8a0      0x8e6 Src/wm8731.o
  .debug_line    0x000000000000d186       0x81 Startup/startup_stm32f407vgtx.o
 
-.debug_str      0x0000000000000000    0xc3b83
+.debug_str      0x0000000000000000    0xc3c0a
  .debug_str     0x0000000000000000    0xbe1ad Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
                                       0xbe534 (size before relaxing)
  .debug_str     0x00000000000be1ad      0x3ed Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
@@ -3820,17 +3820,17 @@ LOAD /opt/st/stm32cubeide_1.6.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                                       0xbde54 (size before relaxing)
  .debug_str     0x00000000000c03ae      0x179 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
                                       0xbdb9c (size before relaxing)
- .debug_str     0x00000000000c0527     0x3422 Src/main.o
-                                      0xc1c44 (size before relaxing)
- .debug_str     0x00000000000c3949       0x1b Src/stm32f4xx_hal_msp.o
-                                      0xbe19f (size before relaxing)
- .debug_str     0x00000000000c3964       0xe8 Src/stm32f4xx_it.o
-                                      0xbdc30 (size before relaxing)
- .debug_str     0x00000000000c3a4c       0x5a Src/system_stm32f4xx.o
+ .debug_str     0x00000000000c0527     0x34a9 Src/main.o
+                                      0xc1ccb (size before relaxing)
+ .debug_str     0x00000000000c39d0       0x1b Src/stm32f4xx_hal_msp.o
+                                      0xbe226 (size before relaxing)
+ .debug_str     0x00000000000c39eb       0xe8 Src/stm32f4xx_it.o
+                                      0xbdcb7 (size before relaxing)
+ .debug_str     0x00000000000c3ad3       0x5a Src/system_stm32f4xx.o
                                       0xbda62 (size before relaxing)
- .debug_str     0x00000000000c3aa6       0xac Src/wm8731.o
-                                      0xc11fc (size before relaxing)
- .debug_str     0x00000000000c3b52       0x31 Startup/startup_stm32f407vgtx.o
+ .debug_str     0x00000000000c3b2d       0xac Src/wm8731.o
+                                      0xc1283 (size before relaxing)
+ .debug_str     0x00000000000c3bd9       0x31 Startup/startup_stm32f407vgtx.o
                                          0x7d (size before relaxing)
 
 .comment        0x0000000000000000       0x53

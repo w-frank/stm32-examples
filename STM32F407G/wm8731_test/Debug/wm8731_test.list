@@ -35,15 +35,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_ranges 000008d8  00000000  00000000  0002e908  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00020a03  00000000  00000000  0002f1e0  2**0
+ 16 .debug_macro  00020a27  00000000  00000000  0002f1e0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000d207  00000000  00000000  0004fbe3  2**0
+ 17 .debug_line   0000d207  00000000  00000000  0004fc07  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000c3b83  00000000  00000000  0005cdea  2**0
+ 18 .debug_str    000c3c0a  00000000  00000000  0005ce0e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  0012096d  2**0
+ 19 .comment      00000053  00000000  00000000  00120a18  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000282c  00000000  00000000  001209c0  2**2
+ 20 .debug_frame  0000282c  00000000  00000000  00120a6c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -10081,8 +10081,8 @@ void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s)
  8003fe8:	4b06      	ldr	r3, [pc, #24]	; (8004004 <HAL_I2SEx_TxRxCpltCallback+0x6c>)
  8003fea:	81da      	strh	r2, [r3, #14]
 
-	HAL_GPIO_TogglePin(LD4_GPIO_Port, LD4_GPIO_Pin);
- 8003fec:	f44f 5180 	mov.w	r1, #4096	; 0x1000
+	HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_GPIO_Pin);
+ 8003fec:	f44f 4100 	mov.w	r1, #32768	; 0x8000
  8003ff0:	4805      	ldr	r0, [pc, #20]	; (8004008 <HAL_I2SEx_TxRxCpltCallback+0x70>)
  8003ff2:	f7fd fc38 	bl	8001866 <HAL_GPIO_TogglePin>
 }

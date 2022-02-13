@@ -1,0 +1,8 @@
+bme280.c:30:6:TrimRead	64	static
+bme280.c:79:5:BME280_Config	56	static
+bme280.c:143:5:BMEReadRaw	32	static
+bme280.c:171:6:BME280_WakeUP	48	static
+bme280.c:193:9:BME280_compensate_T_int32	0	static
+bme280.c:208:10:BME280_compensate_P_int64	32	static
+bme280.c:264:10:bme280_compensate_H_int32	0	static
+bme280.c:285:6:BME280_Measure	16	static

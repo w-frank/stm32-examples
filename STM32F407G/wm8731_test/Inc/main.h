@@ -47,8 +47,18 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
+/* Orange LED */
+#define LD3_GPIO_Port GPIOD
+#define LD3_GPIO_Pin  GPIO_PIN_12
+/* Green LED */
 #define LD4_GPIO_Port GPIOD
-#define LD4_GPIO_Pin GPIO_PIN_12
+#define LD4_GPIO_Pin  GPIO_PIN_13
+/* Red LED */
+#define LD5_GPIO_Port GPIOD
+#define LD5_GPIO_Pin  GPIO_PIN_14
+/* Blue LED */
+#define LD6_GPIO_Port GPIOD
+#define LD6_GPIO_Pin  GPIO_PIN_15
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/

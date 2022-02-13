@@ -412,7 +412,7 @@ void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s)
 	tx_buffer[6] = (right_sample >> 16) & 0xFFFF;
 	tx_buffer[7] = right_sample & 0xFFFF;
 
-	HAL_GPIO_TogglePin(LD4_GPIO_Port, LD4_GPIO_Pin);
+	HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_GPIO_Pin);
 }
 
 
